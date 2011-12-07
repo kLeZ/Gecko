@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{06381615-2E37-43D2-BEDE-BAD51BEB703A}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Gecko</RootNamespace>
+    <AssemblyName>Gecko</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="ICSharpCode.SharpZipLib" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Collections\Sorters.cs" />
+    <Compile Include="Data\DBWork.cs" />
+    <Compile Include="Extensions\DateTimeExtensions\Extensions.cs" />
+    <Compile Include="Extensions\ObjectExtensions.cs" />
+    <Compile Include="GenericUtils\GenericComparer.cs" />
+    <Compile Include="GenericUtils\GenericsReflector.cs" />
+    <Compile Include="IO\FileRoller.cs" />
+    <Compile Include="IO\ZipWork.cs" />
+    <Compile Include="Log\Logger.cs" />
+    <Compile Include="Net\FTPFactory.cs" />
+    <Compile Include="Net\FTPFileTransferer.cs" />
+    <Compile Include="Net\Mail.cs" />
+    <Compile Include="Net\ParametriFTP.cs" />
+    <Compile Include="Parsing\Log.cs" />
+    <Compile Include="Extensions\ControlExtensions\WebForms\Extensions.cs" />
+    <Compile Include="Extensions\ControlExtensions\WindowsForms\Extensions.cs" />
+    <Compile Include="Extensions\DataExtensions\Extensions.cs" />
+    <Compile Include="Extensions\WebExtensions\Extensions.cs" />
+    <Compile Include="Extensions\XmlExtensions\Extensions.cs" />
+    <Compile Include="Parsing\DataInformation.cs" />
+    <Compile Include="Parsing\TextFileParser.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Randomics\Randomizer.cs" />
+    <Compile Include="Randomics\MersenneTwister.cs" />
+    <Compile Include="Security\MD5SHAHelper.cs" />
+    <Compile Include="Security\RSAHelper.cs" />
+    <Compile Include="Security\X509Helper.cs" />
+    <Compile Include="Threading\ThreadPoolWait.cs" />
+    <Compile Include="UI\WinForms\ConsoleBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UI\WinForms\PasswordStrengthControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\WinForms\PasswordStrengthControl.Designer.cs">
+      <DependentUpon>PasswordStrengthControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Utils\PasswordStrength.cs" />
+    <Compile Include="Utils\Utilities.cs" />
+    <Compile Include="Xml\XsdFromXml.cs" />
+    <Compile Include="Extensions\EnumExtensions\Extensions.cs" />
+    <Compile Include="Extensions\CollectionExtensions\Extensions.cs" />
+    <Compile Include="Extensions\StringExtensions\Extensions.cs" />
+    <Compile Include="Utils\StringValueAttribute.cs" />
+    <Compile Include="GenericUtils\KeyEqualityComparer.cs" />
+    <Compile Include="Utils\KeyValueStringer.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="UI\WinForms\PasswordStrengthControl.resx">
+      <DependentUpon>PasswordStrengthControl.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ItemGroup>
+    <None Include="Data\SqlJobsController.cs" />
+    <None Include="Extensions\SharePointExtensions\Extensions.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Extensions\EnumExtensions\" />
+    <Folder Include="Extensions\StringExtensions\" />
+    <Folder Include="Extensions\SharePointExtensions\" />
+  </ItemGroup>
+</Project>
