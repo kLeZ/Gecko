@@ -1,23 +1,44 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Gecko/Extensions/ControlExtensions/WebForms/Extensions.cs">
-    <Files>
-      <File FileName="TestGecko/Extensions.cs" Line="16" Column="1" />
-      <File FileName="Gecko/Extensions/ControlExtensions/WebForms/Extensions.cs" Line="9" Column="1" />
-    </Files>
+  <MonoDevelop.Ide.Workbench>
     <Pads>
       <Pad Id="ProjectPad">
         <State expanded="True" selected="True">
           <Node name="Gecko" expanded="True">
+            <Node name="Collections" expanded="True" />
+            <Node name="Data" expanded="True">
+              <Node name="Reporting" expanded="True" />
+            </Node>
             <Node name="Extensions" expanded="True">
+              <Node name="CollectionExtensions" expanded="True" />
               <Node name="ControlExtensions" expanded="True">
                 <Node name="WebForms" expanded="True" />
+                <Node name="WindowsForms" expanded="True" />
               </Node>
+              <Node name="DataExtensions" expanded="True" />
+              <Node name="DateTimeExtensions" expanded="True" />
               <Node name="EnumExtensions" expanded="True" />
+              <Node name="SharePointExtensions" expanded="True" />
+              <Node name="StringExtensions" expanded="True" />
               <Node name="WebExtensions" expanded="True" />
+              <Node name="XmlExtensions" expanded="True" />
             </Node>
+            <Node name="GenericUtils" expanded="True" />
+            <Node name="IO" expanded="True" />
+            <Node name="Log" expanded="True" />
+            <Node name="Net" expanded="True" />
+            <Node name="Parsing" expanded="True" />
+            <Node name="Properties" expanded="True" />
+            <Node name="Randomics" expanded="True" />
+            <Node name="Security" expanded="True" />
+            <Node name="Threading" expanded="True" />
+            <Node name="UI" expanded="True">
+              <Node name="WinForms" expanded="True" />
+            </Node>
+            <Node name="Utils" expanded="True" />
+            <Node name="Xml" expanded="True" />
           </Node>
-          <Node name="TestGecko" expanded="True">
+          <Node name="TestGecko">
             <Option id="ShowVersionControlOverlays" value="True" />
             <Option id="ShowAllFiles" value="False" />
           </Node>

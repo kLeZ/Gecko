@@ -100,6 +100,9 @@
     <Compile Include="Utils\StringValueAttribute.cs" />
     <Compile Include="GenericUtils\KeyEqualityComparer.cs" />
     <Compile Include="Utils\KeyValueStringer.cs" />
+    <Compile Include="Utils\%40string.cs" />
+    <Compile Include="Utils\ObjectCopier.cs" />
+    <Compile Include="Data\Reporting\RDLFactory.cs" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="UI\WinForms\PasswordStrengthControl.resx">
@@ -122,5 +125,6 @@
     <Folder Include="Extensions\EnumExtensions\" />
     <Folder Include="Extensions\StringExtensions\" />
     <Folder Include="Extensions\SharePointExtensions\" />
+    <Folder Include="Data\Reporting\" />
   </ItemGroup>
 </Project>
